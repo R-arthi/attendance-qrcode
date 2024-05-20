@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <style>
+		body {
+            background-image: url("images/a1.png");
+            background-size: cover; /* Adjust to cover, contain, or specific dimensions */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            background-color: transparent;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .top-bar a {
+            margin-left: 30px;
+            padding: 10px 20px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none; /* Remove underline */
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .top-bar a:hover {
+            background-color: rgb(72, 14, 120);
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 150px;
+        }
+        .indexbox {
+            background-color:color-mix(in srgb, color percentage, color percentage);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            text-align: center;
+        }
+        .indexbox h2 {
+            color: rgb(0, 0, 0);
+            font-size: 29px;
+            margin-bottom: 20px;
+        }
+        .button1 {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button1:hover {
+            background-color: rgb(72, 14, 120);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+         <a href="login_admin.jsp">Staff</a>
+    </div>
+    <div class="container">
+        <div class="indexbox">
+            <h2>STUDENT ATTENDANCE</h2>
+            <form action="Login.html"><button class="button1">Login</button></form>
+            <form action="Register.html"><button class="button1">Register As User</button></form>
+        </div>
+    </div>
+</body>
+</html>

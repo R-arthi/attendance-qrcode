@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url("images/a7.gif") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: rgb(57, 128, 140); /* Adjust the transparency here */
+      padding: 30px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .loginbox {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .customselect {
+      margin-bottom: 20px;
+    }
+    .select select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 93%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+	<form action="Login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+				<div class="customselect">
+					<div class="select">
+  					<select  name="utype" required>
+    					
+    					<option value="1">User</option>
+    					
+  					</select>
+					</div>
+				</div>
+			<input type="text" name="userid" placeholder="Enter User ID" required>
+			<input type="password" name="password" placeholder="Enter Password" required>
+			<h3>Invalid Password</h3>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	</form>
+</body>
+</html>

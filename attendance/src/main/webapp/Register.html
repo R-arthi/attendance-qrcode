@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Register</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/a10.gif'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3498db; /* Change the color to your preferred color */
+        }
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <form action="Register.jsp" method="post">
+        <div class="container">
+            <div class="registerbox">
+                <h2>Student Register</h2>
+                <input type="text" name="fname" placeholder="Enter First Name" required>
+                <input type="text" name="lname" placeholder="Enter Last Name" required>
+                <input type="text" name="email" placeholder="Enter Email ID" required>
+                <input type="text" name="dept" placeholder="Enter Department" required>
+                <input type="text" name="phno" placeholder="Enter Phone Number" onkeypress="return event.charCode>= 48 && event.charCode<= 57" required>
+                <input type="text" name="address" placeholder="Enter Address" required>
+                <input type="text" name="uid" placeholder="Enter Customer ID" required>
+                <input type="password" name="pass1" placeholder="Enter Password" required>
+                <input type="password" name="pass2" placeholder="Retype Password" required>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

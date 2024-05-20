@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("images/a11.gif");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      color: rgb(84, 203, 155);
+      padding: 50px;
+      background-color:transparent;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(255, 255, 255);
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button-like-text {
+      background-color: rgb(233, 102, 95);
+      color: #fff;
+      padding: 15px 25px;
+      font: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .button-like-text:hover {
+      background-color: rgb(200, 55, 55);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Student Attendance Admin Panel</h1>
+    <p>Welcome, Admin! Here you can manage students.</p>
+    <div class="button-container">
+      <button class="button-like-text" onclick="window.location.href='HomePage.html'">Home</button>
+      <button class="button-like-text" onclick="window.location.href='student.jsp'">Student</button>
+      <button class="button-like-text" onclick="window.location.href='info.jsp'">Add Information</button>
+      <button class="button-like-text" onclick="window.location.href='qr.html'">Give QR</button>
+    </div>
+  </div>
+  <script>
+    // You can keep your existing script here if needed
+  </script>
+</body>
+</html>
